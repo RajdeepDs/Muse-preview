@@ -18,15 +18,21 @@ const config: Omit<Config, "content"> = {
     },
     extend: {
       colors: {
-        background: "#010419",
-        darkIndigo: "#181353",
-        indigo: "#4C35C1",
-        blueGray: "#3A3E57",
-        gray: "#686B82",
-        fadedDarkBlue: "#101B34",
-        fadedDarkPurple: "#161433",
-        fadedPurple: "#7349C7",
-        purple: "#9B69FF",
+        greyLight: "#E3E7EE",
+        grey: "#C8D0DC",
+        indigoLight: "#4A4ED9",
+        indigo2: "#3F43BC",
+        indigo: "#3538A1",
+        indigoFaded: "#2A2D86",
+        darkIndigo3: "#20236C",
+        darkIndigo2: "#171953",
+        darkIndigo: "#0E0F3B",
+        bg2: "#060725",
+        bg: "#000002",
+      },
+      fontFamily: {
+        sans: ["Geist", "sans-serif"],
+        mono: ["Geist Mono", "monospace"],
       },
       keyframes: {
         "accordion-down": {

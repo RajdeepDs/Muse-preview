@@ -10,22 +10,23 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@muse/ui": "workspace:*",
+    "geist": "^1.2.2",
     "next": "^14.0.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@muse/ui": "workspace:*"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@muse/eslint-config": "workspace:*",
+    "@muse/tailwind-config": "workspace:*",
+    "@muse/typescript-config": "workspace:*",
     "@next/eslint-plugin-next": "^14.0.3",
     "@types/node": "^20.10.0",
     "@types/react": "^18.2.38",
     "@types/react-dom": "^18.2.17",
     "autoprefixer": "^10.4.16",
-    "@muse/eslint-config": "workspace:*",
     "postcss": "^8.4.31",
-    "@muse/tailwind-config": "workspace:*",
     "tailwindcss": "^3.3.5",
-    "@muse/typescript-config": "workspace:*",
     "typescript": "^5.3.2"
   }
 }
