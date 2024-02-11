@@ -11,7 +11,7 @@ const config: Omit<Config, "content"> = {
   theme: {
     container: {
       center: true,
-      padding: "10rem",
+      padding: "5rem",
       screens: {
         "2xl": "1400px",
       },
