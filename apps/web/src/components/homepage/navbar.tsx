@@ -1,7 +1,7 @@
-import Link from "next/link";
-import Image from "next/image";
-import NavTabs from "./nav-tabs";
 import { Button } from "@muse/ui";
+import Image from "next/image";
+import Link from "next/link";
+import NavTabs from "./nav-tabs";
 
 export const navItems = [
   {
@@ -24,11 +24,11 @@ export const navItems = [
 
 export default function NavBar(): JSX.Element {
   return (
-    <nav className="flex py-2 items-center justify-between ">
+    <nav className="flex items-center justify-between py-2 ">
       <div className="flex items-center gap-4">
         <Link href="/" className="flex items-center gap-2">
           <Image src="./Logo.svg" alt="Muse" width={25} height={25} />
-          <h1 className="font-medium text-md">Muse</h1>
+          <h1 className="text-md font-medium">Muse</h1>
         </Link>
         <NavTabs />
         {navItems.map((item) => (
@@ -37,7 +37,7 @@ export default function NavBar(): JSX.Element {
             key={item.slug}
             className="flex space-x-3"
           >
-            <span className="font-light text-base">{item.name}</span>
+            <span className="text-base font-light">{item.name}</span>
           </Link>
         ))}
       </div>
