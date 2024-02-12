@@ -7,11 +7,11 @@ export default function HomePageLayout({
 }): JSX.Element {
   return (
     <html lang="en">
-      <body className="bg-bg container text-white">
-        <div className="border-grey/20 border-b">
+      <body className="bg-bg text-white">
+        <div className="border-grey/10 border-b">
           <NavBar />
         </div>
-        {children}
+        <main className="container">{children}</main>
       </body>
     </html>
   );
