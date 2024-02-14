@@ -7,7 +7,8 @@
   "exports": {
     ".": "./src/index.tsx",
     "./styles.css": "./dist/index.css",
-    "./icons": "./src/icons.tsx"
+    "./icons": "./src/icons.tsx",
+    "./utils": "./src/lib/utils.ts"
   },
   "license": "MIT",
   "scripts": {

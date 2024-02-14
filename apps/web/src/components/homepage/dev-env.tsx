@@ -1,12 +1,20 @@
+"use client";
+import { motion } from "framer-motion";
+
 export default function DevelopmentEnvironment(): JSX.Element {
   return (
     <div className="flex flex-col items-center justify-center">
-      <h1
-        className="text-balance text-center text-6xl font-bold leading-tight
+      <motion.h1
+        className="-z-10 text-balance text-center text-6xl font-bold leading-tight
       "
+        initial={{ y: 120 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 1, ease: "easeInOut" }}
       >
         Muse: Your effortless Next.js development environment
-      </h1>
+      </motion.h1>
+      {/*TODO - Modify LampHeading according to our needs*/}
+      {/* <LampHeading /> */}
       <div className="bg-bg2 border-indigoLight mt-20 h-[286px] w-full rounded-lg border" />
       <h2 className="mt-10 max-w-3xl text-center text-3xl">
         Boost your Next.js development workflow with Muse's intuitive and
