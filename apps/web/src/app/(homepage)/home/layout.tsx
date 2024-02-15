@@ -8,10 +8,10 @@ export default function HomePageLayout({
   return (
     <html lang="en">
       <body className="bg-bg text-white">
-        <div className="border-grey/10 border-b">
+        <header className="border-grey/10 fixed left-0 right-0 top-0 border-b py-1 backdrop-blur-2xl">
           <NavBar />
-        </div>
-        <main className="container">{children}</main>
+        </header>
+        <main className="padding-header">{children}</main>
       </body>
     </html>
   );

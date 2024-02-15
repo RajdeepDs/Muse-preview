@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --header-height: 49px;
+}
+
+.h-header {
+  height: var(--header-height);
+}
+
+.hero {
+  background: radial-gradient(
+    ellipse 60% 40% at 50% -20%,
+    rgb(74, 78, 217, 0.7),
+    hsla(0, 0%, 100%, 0)
+  );
+  margin-top: calc(-1 * var(--header-height));
+  padding-top: var(--header-height);
+}
+
+.padding-header {
+  padding-top: var(--header-height);
+}
+
+.border-gradient {
+  background: radial-gradient(
+    60% 10% at 50% 50%,
+    rgb(74, 78, 217, 0.3),
+    rgba(1, 4, 25, 0) 100%
+  );
+}
