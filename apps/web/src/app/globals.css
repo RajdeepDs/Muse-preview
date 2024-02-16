@@ -12,8 +12,8 @@
 
 .hero {
   background: radial-gradient(
-    ellipse 60% 40% at 50% -20%,
-    rgb(74, 78, 217, 0.7),
+    ellipse 50% 20% at 50% -10%,
+    rgba(74, 79, 217, 0.7),
     hsla(0, 0%, 100%, 0)
   );
   margin-top: calc(-1 * var(--header-height));

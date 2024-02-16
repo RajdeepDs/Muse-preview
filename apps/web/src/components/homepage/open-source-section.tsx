@@ -1,5 +1,6 @@
 import { Button } from "@muse/ui";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function OpenSourceSection(): JSX.Element {
   return (
@@ -14,10 +15,17 @@ export default function OpenSourceSection(): JSX.Element {
           contribute to it however you want!
         </p>
       </div>
-      <Button className="w-fit gap-2" variant="secondary">
-        <Image src="/github-mark.svg" width={24} height={24} alt="Github" />
-        GitHub
-      </Button>
+      <Link href="https://github.com/RajdeepDs/Muse">
+        <Button className="w-fit gap-2" variant="secondary">
+          <Image
+            src="/github-mark-white.svg"
+            width={24}
+            height={24}
+            alt="Github"
+          />
+          GitHub
+        </Button>
+      </Link>
     </div>
   );
 }
