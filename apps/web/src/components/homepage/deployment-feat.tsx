@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 
-export default function RealtimeFeature(): JSX.Element {
+export default function DeploymentFeature(): JSX.Element {
   return (
     <div className="flex flex-col items-center justify-center">
       <motion.h1
@@ -11,43 +11,36 @@ export default function RealtimeFeature(): JSX.Element {
         whileInView={{ y: 0 }}
         transition={{ duration: 1, ease: "easeInOut" }}
       >
-        Realtime Next.js Development:
+        Effortless Next.js Deployments:
         <br />
-        Muse powers effortless
+        Get Your App Live with Muse in
         <br />
-        team workflow
+        Minutes
       </motion.h1>
       <div className="container flex flex-col items-center">
         <div className="bg-bg2 border-indigoLight mt-20 h-[286px] w-full rounded-lg border" />
         <h2 className="mt-10 max-w-3xl text-pretty text-center text-3xl">
-          Break down communication barriers. <br /> Collaborate in real-time
-          with other developers <br />
-          directly within Muse.
+          Connect directly to popular platforms like <br />
+          Vercel for seamless deployments.
         </h2>
       </div>
       <div className="border-gradient my-16 h-[1px] w-full" />
       <div className="container flex flex-col gap-5">
-        <ul className="grid grid-cols-3 gap-5">
-          <li className="flex w-fit">
+        <ul className="grid grid-cols-6">
+          <li className="col-span-2 col-start-2 flex w-fit">
             <p className="text-grey/70 font-light">
               <span className="font-medium text-white">
-                Real-time code editing:
+                One-click deployment:
               </span>{" "}
-              Make simultaneous changes and see updates instantly.
+              Deploy your app to Vercel directly from Muse with a single click.
             </p>
           </li>
-          <li className="flex w-fit">
-            <p className="text-grey/70 font-light">
-              <span className="font-medium text-white">Shared workspaces:</span>{" "}
-              Invite team members and work on projects together.
-            </p>
-          </li>
-          <li className="flex w-fit">
+          <li className="col-span-2 col-start-4 flex w-fit">
             <p className="text-grey/70 font-light">
               <span className="font-medium text-white">
-                Code reviews and comments:
+                Custom domain support:
               </span>{" "}
-              Provide feedback and suggestions within the code editor.
+              Connect your own domain for a professional experience.
             </p>
           </li>
         </ul>
@@ -55,16 +48,17 @@ export default function RealtimeFeature(): JSX.Element {
           <li className="col-span-2 col-start-2 flex w-fit">
             <p className="text-grey/70 font-light">
               <span className="font-medium text-white">
-                Project management tools:
+                Real-time deployment status:
               </span>{" "}
-              Organize tasks, track progress, and stay on top of deadlines.
+              Track the progress of your deployments in real-time.
             </p>
           </li>
           <li className="col-span-2 col-start-4 flex w-fit">
             <p className="text-grey/70 font-light">
-              <span className="font-medium text-white">Git integration:</span>{" "}
-              Push and pull code changes seamlessly within the collaborative
-              environment.
+              <span className="font-medium text-white">
+                Environment management:
+              </span>{" "}
+              Easily switch between development, and production environments.
             </p>
           </li>
         </ul>
