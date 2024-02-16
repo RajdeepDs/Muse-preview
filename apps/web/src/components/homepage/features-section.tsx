@@ -1,5 +1,6 @@
 import DeploymentFeature from "./deployment-feat";
 import DevelopmentEnvironment from "./dev-env";
+import IntegrationSection from "./integrations-section";
 import RealtimeFeature from "./realtime-feat";
 
 export default function FeaturesSection(): JSX.Element {
@@ -8,6 +9,7 @@ export default function FeaturesSection(): JSX.Element {
       <DevelopmentEnvironment />
       <RealtimeFeature />
       <DeploymentFeature />
+      <IntegrationSection />
     </div>
   );
 }
