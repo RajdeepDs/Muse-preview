@@ -1,3 +1,4 @@
+import FooterSection from "@/components/homepage/footer-section";
 import NavBar from "@/components/homepage/navbar";
 
 export default function HomePageLayout({
@@ -12,6 +13,9 @@ export default function HomePageLayout({
           <NavBar />
         </header>
         <main className="padding-header">{children}</main>
+        <footer className="mb-16">
+          <FooterSection />
+        </footer>
       </body>
     </html>
   );
