@@ -1,7 +1,7 @@
 import { Button } from "@muse/ui";
 import Image from "next/image";
 import Link from "next/link";
-import NavTabs from "./nav-tabs";
+import { NavTabs } from "./nav-tabs";
 
 export const navItems = [
   {

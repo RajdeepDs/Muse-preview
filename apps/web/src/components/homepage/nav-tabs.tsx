@@ -1,4 +1,5 @@
 "use client";
+
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -8,7 +9,7 @@ import {
   NavigationMenuTrigger,
 } from "@muse/ui";
 
-export default function NavTabs(): JSX.Element {
+export function NavTabs() {
   return (
     <NavigationMenu>
       <NavigationMenuList>
