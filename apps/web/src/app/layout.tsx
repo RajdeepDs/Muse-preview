@@ -1,6 +1,7 @@
 import "@muse/ui/styles.css";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
+
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -16,7 +17,7 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
-      <body>{children}</body>
+      <body className="bg-bg text-white">{children}</body>
     </html>
   );
 }

@@ -2,14 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 1px solid rgba(165, 165, 165, 0.377);
+  border-radius: 1rem;
+}
+
+/* CSS variables */
 :root {
   --header-height: 49px;
 }
 
+/* Header styles */
 .h-header {
   height: var(--header-height);
 }
 
+/* Padding for header */
+.padding-header {
+  padding-top: var(--header-height);
+}
+
+/* Hero section styles */
 .hero {
   background: radial-gradient(
     ellipse 50% 20% at 50% -10%,
@@ -20,14 +42,11 @@
   padding-top: var(--header-height);
 }
 
-.padding-header {
-  padding-top: var(--header-height);
-}
-
+/* Border gradient */
 .border-gradient {
   background: radial-gradient(
     60% 10% at 50% 50%,
-    rgb(74, 78, 217, 0.3),
+    rgba(74, 78, 217, 0.3),
     rgba(1, 4, 25, 0) 100%
   );
 }

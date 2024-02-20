@@ -14,7 +14,7 @@ export default function HomePage(): JSX.Element {
       <div className="my-24">
         <CTASection />
       </div>
-      <div className="border-gradient container mb-16 h-[1px] w-full" />
+      <div className="border-grey/10 h-[1px] w-full border-b" />
     </div>
   );
 }

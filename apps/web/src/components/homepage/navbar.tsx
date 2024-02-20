@@ -37,11 +37,11 @@ export default function NavBar(): JSX.Element {
             key={item.slug}
             className="flex space-x-3"
           >
-            <span className="text-base font-light">{item.name}</span>
+            <span className="">{item.name}</span>
           </Link>
         ))}
       </div>
-      <div className="flex gap-2">
+      <div className="flex gap-2 text-base">
         <Button variant="ghost" size="sm">
           Log in
         </Button>
