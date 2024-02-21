@@ -2,6 +2,7 @@
 import { Button } from "@muse/ui";
 import * as Icons from "@muse/ui/icons";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import InfoPill from "./info-pill";
 
 export default function HeroSection(): JSX.Element {
@@ -40,7 +41,13 @@ export default function HeroSection(): JSX.Element {
           <Icons.ChevronRight className="ml-2 h-5 w-5" />
         </Button>
       </motion.div>
-      <div className="bg-bg2 border-indigoLight mt-28 h-[750px] w-full rounded-lg border" />
+      <Image
+        src="/Editor-Mockup.webp"
+        alt="Editor Mockup"
+        width={1240}
+        height={750}
+        className="border-indigoLight mt-28 h-[750px] w-full rounded-lg border"
+      />
     </div>
   );
 }
