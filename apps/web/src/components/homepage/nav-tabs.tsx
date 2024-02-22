@@ -14,7 +14,7 @@ import React from "react";
 
 export function NavTabs() {
   return (
-    <NavigationMenu>
+    <NavigationMenu className="hidden md:flex">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Features</NavigationMenuTrigger>

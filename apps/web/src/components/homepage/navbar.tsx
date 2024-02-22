@@ -24,7 +24,7 @@ export const navItems = [
 
 export default function NavBar(): JSX.Element {
   return (
-    <div className="container mx-auto flex items-center justify-between">
+    <div className="mx-auto flex h-full items-center justify-between md:container">
       <div className="flex items-center gap-4">
         <Link href="/" className="flex items-center gap-2">
           <Image src="./Logo.svg" alt="Muse" width={25} height={25} />
@@ -35,13 +35,13 @@ export default function NavBar(): JSX.Element {
           <Link
             href={`/${item.slug}`}
             key={item.slug}
-            className="flex space-x-3"
+            className="hidden space-x-3 md:flex"
           >
             <span className="">{item.name}</span>
           </Link>
         ))}
       </div>
-      <div className="flex gap-2 text-base">
+      <div className="hidden gap-2 text-base md:flex">
         <Button variant="ghost" size="sm">
           Log in
         </Button>
