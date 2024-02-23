@@ -1,6 +1,7 @@
 import { Button } from "@muse/ui";
 import Image from "next/image";
 import Link from "next/link";
+import MobileNavMenu from "./mobile-nav-menu";
 import { NavTabs } from "./nav-tabs";
 
 export const navItems = [
@@ -47,6 +48,7 @@ export default function NavBar(): JSX.Element {
         </Button>
         <Button size="sm">Sign Up</Button>
       </div>
+      <MobileNavMenu />
     </div>
   );
 }
