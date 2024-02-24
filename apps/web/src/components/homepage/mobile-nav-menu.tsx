@@ -2,21 +2,30 @@
 import { useState } from "react";
 
 export default function MobileNavMenu(): JSX.Element {
-  const [isOpen, setIsOpen] = useState("close");
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen((prev) => (prev === "open" ? "close" : "open"));
+    setIsOpen((prev) => !prev);
   };
 
   return (
-    <div className="flex">
+    <div className="flex justify-center md:hidden">
+      {" "}
       <div
-        data-state={isOpen}
-        className="group flex flex-col items-center hover:cursor-pointer data-[state=open]:gap-y-2"
+        className="group flex flex-col items-center hover:cursor-pointer"
         onClick={toggleMenu}
       >
-        <span className="h-[1px] w-4 origin-center bg-white transition-all duration-300 group-data-[state=close]:rotate-45" />
-        <span className="h-[1px] w-4 origin-center bg-white transition-all duration-300 group-data-[state=close]:-rotate-45" />
+        {isOpen ? (
+          <>
+            <span className="h-[1px] w-4 translate-y-[1px] -rotate-45 bg-white transition-all duration-300" />
+            <span className="h-[1px] w-4 rotate-45 bg-white transition-all duration-300" />
+          </>
+        ) : (
+          <>
+            <span className="h-[1px] w-4 origin-center translate-y-[5px] bg-white transition-all duration-300" />
+            <span className="h-[1px] w-4 origin-center -translate-y-[5px] bg-white transition-all duration-300" />
+          </>
+        )}
       </div>
     </div>
   );
