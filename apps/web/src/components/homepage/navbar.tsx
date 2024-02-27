@@ -43,10 +43,14 @@ export default function NavBar(): JSX.Element {
         ))}
       </div>
       <div className="hidden gap-2 text-base md:flex">
-        <Button variant="ghost" size="sm">
-          Log in
-        </Button>
-        <Button size="sm">Sign Up</Button>
+        <Link href="/login">
+          <Button variant="ghost" size="sm">
+            Log in
+          </Button>
+        </Link>
+        <Link href="/register">
+          <Button size="sm">Sign Up</Button>
+        </Link>
       </div>
       <MobileNavMenu />
     </div>
