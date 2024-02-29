@@ -1,1 +1,7 @@
-export { ChevronRight, Github, Twitter, type LucideIcon } from "lucide-react";
+export {
+  ChevronLeft,
+  ChevronRight,
+  Github,
+  Twitter,
+  type LucideIcon,
+} from "lucide-react";
