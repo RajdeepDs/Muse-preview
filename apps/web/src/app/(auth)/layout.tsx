@@ -20,7 +20,7 @@ export default function AuthLayout({
         <Icons.ChevronLeft className="h-4 w-4" />
         Home
       </Link>
-      <div className="min-h-screen">{children}</div>
+      <div className="container min-h-screen">{children}</div>
     </div>
   );
 }

@@ -5,14 +5,17 @@ import Link from "next/link";
 
 export default function RegisterPage(): JSX.Element {
   return (
-    <div className="mx-auto flex h-screen w-full max-w-[450px] flex-col justify-center gap-y-4">
+    <div className="mx-auto flex h-screen w-full flex-col justify-center gap-y-4 md:max-w-[450px]">
       <div className="flex flex-col gap-y-6 text-start">
-        <Image src="./Logo.svg" width={30} height={30} alt="Muse" />
+        <Image src="./Logo.svg" width={35} height={35} alt="Muse Logo" />
         <div className="flex flex-col gap-1">
           <h1 className="text-2xl font-semibold">Create a Muse account</h1>
           <p className="text-grey/70">
             Already have an account?{" "}
-            <Link href="/login" className="text-blue-500 hover:underline">
+            <Link
+              href="/login"
+              className="font-semibold text-blue-500 hover:underline"
+            >
               Log in
             </Link>
           </p>
@@ -25,7 +28,7 @@ export default function RegisterPage(): JSX.Element {
         <div className="bg-grey/20 h-[1px] w-full" />
       </div>
       <div className="w-full">
-        <OauthButton />
+        <OauthButton type="Sign up" />
       </div>
       <p className="text-grey/70 text-center text-sm font-light">
         By signin up, you agree to our{" "}
