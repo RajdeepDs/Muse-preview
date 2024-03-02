@@ -31,7 +31,7 @@ export default function RegisterPage(): JSX.Element {
         <OauthButton type="Sign up" />
       </div>
       <p className="text-grey/70 text-center text-sm font-light">
-        By signin up, you agree to our{" "}
+        By signing up, you agree to our{" "}
         <Link
           href="/terms"
           className="hover:text-brand text-white hover:underline"
