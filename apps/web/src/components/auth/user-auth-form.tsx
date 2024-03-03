@@ -13,6 +13,7 @@ import { useForm } from "react-hook-form";
 import * as z from "zod";
 
 const formSchema = z.object({
+  username: z.string().min(3),
   email: z.string().email(),
   password: z.string().min(8),
 });
@@ -20,6 +21,7 @@ export default function UserAuthForm(): JSX.Element {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
+      username: "",
       email: "",
       password: "",
     },
@@ -33,6 +35,23 @@ export default function UserAuthForm(): JSX.Element {
       <div className="w-full">
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+            <FormField
+              control={form.control}
+              name="username"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>User Name</FormLabel>
+                  <FormControl>
+                    <Input
+                      placeholder="Enter your name"
+                      {...field}
+                      autoComplete="off"
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
             <FormField
               control={form.control}
               name="email"
@@ -58,7 +77,7 @@ export default function UserAuthForm(): JSX.Element {
                   <FormLabel>Password</FormLabel>
                   <FormControl>
                     <Input
-                      placeholder="Enter your password"
+                      placeholder="Set password"
                       {...field}
                       type="password"
                     />

@@ -1,7 +1,7 @@
-import "@muse/ui/styles.css";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 
+import "@muse/ui/styles.css";
 import type { Metadata } from "next";
 import "./globals.css";
 
