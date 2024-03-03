@@ -45,7 +45,7 @@ export default function MobileNavMenu(): JSX.Element {
             }}
             transition={{ duration: 0.7, ease: "easeInOut" }}
           >
-            <div className="padding-header container mt-5 flex flex-col items-start gap-y-5 text-lg font-medium">
+            <div className="padding-header container mt-5 flex flex-col items-start gap-y-5 px-4 text-lg font-medium">
               <a href="/docs" className="block text-white">
                 Docs
               </a>
@@ -59,7 +59,7 @@ export default function MobileNavMenu(): JSX.Element {
                 Changelog
               </a>
             </div>
-            <div className="container absolute bottom-5 flex w-full items-center justify-between">
+            <div className="container absolute bottom-5 flex w-full items-center justify-between px-4">
               <div className="flex gap-x-2">
                 <Link href="/register">
                   <Button size="sm">Sign Up</Button>
