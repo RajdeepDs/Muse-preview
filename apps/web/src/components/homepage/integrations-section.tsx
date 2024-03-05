@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from "framer-motion";
 
 export default function IntegrationSection(): JSX.Element {
@@ -12,7 +13,7 @@ export default function IntegrationSection(): JSX.Element {
         transition={{ duration: 1, ease: "easeInOut" }}
       >
         Revolutionize Your Workflow: <br className="hidden md:block" />
-        Streamline Development with Muse's
+        Streamline Development with Muse&apos;s
         <br className="hidden md:block" /> Powerful Integrations
       </motion.h1>
       <div className="container flex flex-col items-center">

@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from "framer-motion";
 
 export default function DevelopmentEnvironment(): JSX.Element {
@@ -16,7 +17,7 @@ export default function DevelopmentEnvironment(): JSX.Element {
       <div className="container flex flex-col items-center">
         <div className="bg-bg2 border-indigoLight mt-20 h-[286px] w-full rounded-lg border" />
         <h2 className="mt-10 max-w-3xl text-center text-2xl md:text-3xl">
-          Boost your Next.js development workflow with Muse's intuitive and
+          Boost your Next.js development workflow with Muse&apos;s intuitive and
           feature-rich environment.
         </h2>
       </div>
@@ -34,7 +35,8 @@ export default function DevelopmentEnvironment(): JSX.Element {
               <span className="font-medium text-white">
                 Syntax Highlighting:
               </span>{" "}
-              Understand Your Next.js Code with Muse's Intelligent Highlighting.
+              Understand Your Next.js Code with Muse&apos;s Intelligent
+              Highlighting.
             </p>
           </li>
           <li>
